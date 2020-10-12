@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_detail"
+            android:icon="@drawable/ic_reservation_24dp"
+            android:title="예약내역"
+            android:fontFamily="@font/main_font"/>
+        <item
+            android:id="@+id/nav_review"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="리뷰관리"
+            android:fontFamily="@font/main_font"/>
+        <item
+            android:id="@+id/nav_advertise"
+            android:icon="@drawable/ic_business_24dp"
+            android:title="업체등록"
+            android:fontFamily="@font/main_font"/>
+        <item
+            android:id="@+id/nav_customerList"
+            android:icon="@drawable/ic_breservation_black_24dp"
+            android:title="업체 고객리스트"
+            android:fontFamily="@font/main_font"/>
+        <item
+            android:id="@+id/nav_inqury"
+            android:icon="@drawable/ic_notice_24dp"
+            android:title="공지사항"
+            android:fontFamily="@font/main_font"/>
+        <item
+            android:id="@+id/nav_TaC"
+            android:icon="@drawable/ic_tac_24dp"
+            android:title="이용약관"
+            android:fontFamily="@font/main_font"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E6F2F4"
+        tools:context=".JoinActivity">
+
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6F2F4"
+            android:paddingTop="60dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:fontFamily="@font/main_font"
+                    android:text="아이디"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_span="2"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/overlap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/item_button"
+                    android:text="중복확인" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"
+                    android:text="비밀번호"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/pw"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_span="3"
+                    android:background="#fff"
+                    android:inputType="textPassword"
+                    android:padding="7dp"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"
+                    android:text="비밀번호 확인"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/re_pw"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_span="3"
+                    android:background="#fff"
+                    android:inputType="textPassword"
+                    android:padding="7dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/check_pw"
+                    android:layout_marginTop="33dp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"
+                    android:text="이름"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_span="3"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"
+                    android:text="생년월일"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/birth"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_span="3"
+                    android:background="#fff"
+                    android:hint="ex.961127"
+                    android:padding="7dp"
+                    android:textSize="19sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"
+                    android:text="전화번호"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_span="3"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"
+                    android:text="이메일"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_span="3"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/join_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="회원 가입하기"
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:fontFamily="@font/main_font"
+            android:background="@drawable/join_item_button"
+            android:layout_below="@id/table"/>
+
+
+    </LinearLayout>
+</ScrollView>

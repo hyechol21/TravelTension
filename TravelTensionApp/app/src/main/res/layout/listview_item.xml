@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:layout_weight="4"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingTop="23dp"
+        android:paddingLeft="15dp"
+        android:layout_height="80dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="업체명"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:fontFamily="@font/nanum_extra"/>
+
+            <TextView
+                android:id="@+id/charge_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="청구비용"
+                android:textSize="15dp"
+                android:textColor="#2290C3" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기내용 "
+                android:textColor="#A7A7A7"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/fight_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8F8F8F"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="화물용 "
+                android:textColor="#A7A7A7"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/freight_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8F8F8F"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="특대용 "
+                android:textColor="#A7A7A7"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/special_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8F8F8F"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

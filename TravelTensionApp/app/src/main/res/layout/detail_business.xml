@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/main2"
+        tools:context=".Detail_businessActivity">
+
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="회원 아이디"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:fontFamily="@font/nanum_extra"/>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="회원 이름"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:fontFamily="@font/nanum_extra"/>
+        <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="전화번호"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:fontFamily="@font/nanum_extra"/>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:stretchColumns="1"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/price"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/totalCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/main_font"
+                    android:text="결제 금액"
+                    android:textSize="18sp"
+                    android:textColor="#2086B5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/baggage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/main_font"
+                    android:textColor="#404040"
+                    android:textSize="14sp"
+                    android:text="짐 수량 " />
+            </LinearLayout>
+
+
+            <TableRow>
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text=" 예약자 "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/main_font"/>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_height="50dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:layout_span="3"
+                    android:fontFamily="@font/main_font"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" 휴대폰 "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/main_font"/>
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_height="50dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:layout_span="3"
+                    android:fontFamily="@font/main_font"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" 예약일 "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/main_font"/>
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_height="50dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:layout_span="3"
+                    android:fontFamily="@font/main_font"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" 출발위치 "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/main_font"/>
+
+                <TextView
+                    android:id="@+id/startLocation"
+                    android:layout_height="50dp"
+                    android:layout_span="3"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="#404040"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/main_font"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" 도착위치 "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/main_font"/>
+
+                <TextView
+                    android:id="@+id/endLocation"
+                    android:layout_height="50dp"
+                    android:layout_span="3"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="#404040"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/main_font"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="돌아가기"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:fontFamily="@font/main_font"
+            android:padding="15dp"
+            android:background="@drawable/join_item_button"/>
+
+    </LinearLayout>
+</ScrollView>

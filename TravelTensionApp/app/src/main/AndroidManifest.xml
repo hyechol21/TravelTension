@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kr.ac.kumoh.s20151155.travelapp">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="여행텐션"
+        android:roundIcon="@mipmap/ic_launcher_ico2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".tacActivity"
+            android:label="@string/title_activity_tac"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".noticeActivity" />
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="k73vfau44m" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="패키지명"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IntroTheme"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label=" "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="로그인" />
+        <activity
+            android:name=".JoinActivity"
+            android:label="회원가입" />
+        <activity android:name=".MapActivity" />
+        <activity
+            android:name=".BusinessActivity"
+            android:label="업체등록" />
+        <activity
+            android:name=".noticeActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".ListActivity"
+            android:label="여행텐션" />
+        <activity
+            android:name=".reservationActivity"
+            android:label="예약하기" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="예약내역" />
+        <activity android:name=".CustomerListActivity" />
+        <activity
+            android:name=".List_BusinessActivity"
+            android:label="고객 리스트" />
+        <activity
+            android:name=".Detail_businessActivity"
+            android:label="예약 확인" />
+        <activity android:name=".event1Activity" />
+        <activity android:name=".event2Activity" />
+        <activity android:name=".event3Activity"></activity>
+    </application>
+
+</manifest>

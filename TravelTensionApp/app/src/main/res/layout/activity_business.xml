@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E6F2F4">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6F2F4"
+            android:paddingTop="60dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:text="업체명"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/company_name"
+                    android:layout_marginLeft="10dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="사업자번호"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/BLN"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"
+                    android:maxLength="10"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="비밀번호"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/pw"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"
+                    android:inputType="textPassword"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="대표자 이름"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/represent_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="대표번호"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/represent_phone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"
+                    android:maxLength="11"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="차량번호"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/car_number"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="활동지역"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/area"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"
+                    android:hint="ex)서울"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="사진"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font" />
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_span="2"
+                    android:layout_marginTop="30dp"
+                    android:maxWidth="40dp"
+                    android:maxHeight="40dp"
+                    android:adjustViewBounds="true"/>
+                <Button
+                    android:id="@+id/search_image"
+                    android:layout_marginTop="30dp"
+                    android:text="찾기"
+                    android:textSize="15sp"
+                    android:background="@drawable/item_button"/>
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:text="기내용 요금"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/fight"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"
+                    android:inputType="number"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="화물용 요금"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/freight"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"
+                    android:inputType="number"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="특대용 요금"
+                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/main_font"/>
+                <EditText
+                    android:id="@+id/special"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff"
+                    android:padding="7dp"
+                    android:textSize="18sp"
+                    android:layout_span="3"
+                    android:inputType="number"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="등록하기"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:fontFamily="@font/main_font"
+            android:background="@drawable/join_item_button"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="baggage">
+        <item>짐 종류</item>
+        <item>기내용</item>
+        <item>화물용</item>
+        <item>특대용</item>
+    </string-array>
+</resources>

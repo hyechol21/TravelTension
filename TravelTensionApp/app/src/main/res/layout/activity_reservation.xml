@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".reservationActivity">
+
+
+    <ImageView
+        android:id="@+id/company_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="#ffffff"
+        android:stretchColumns="1" >
+
+        <TableRow>
+            <TextView
+                android:text="예약자 "
+                android:textSize="16sp"
+                android:textColor="#404040"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/main_font"/>
+            <EditText
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:background="#EDF0F0"
+                android:id="@+id/name"
+                android:layout_span="3" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="휴대폰 "
+                android:textSize="16sp"
+                android:textColor="#404040"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/main_font"/>
+            <EditText
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:background="#EDF0F0"
+                android:id="@+id/phone"
+                android:layout_span="3"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="짐 "
+                android:textSize="16sp"
+                android:textColor="#404040"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/main_font"/>
+            <TextView
+                android:id="@+id/fight_cost"
+                android:layout_span="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="기내용"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/fight_num"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:background="#EDF0F0"
+                android:textSize="15sp"
+                android:hint="  수량  "/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text=" "
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/main_font"/>
+            <TextView
+                android:id="@+id/freight_cost"
+                android:layout_span="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="화물용"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/freight_num"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:background="#EDF0F0"
+                android:textSize="15sp"
+                android:hint="  수량  "/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text=" "
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/main_font"/>
+            <TextView
+                android:id="@+id/special_cost"
+                android:layout_span="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="특대용"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/special_num"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:background="#EDF0F0"
+                android:textSize="15sp"
+                android:hint="  수량  "/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/reservation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="예약하기"
+        android:textSize="23sp"
+        android:background="@drawable/join_item_button"
+        android:fontFamily="@font/main_font"/>
+</LinearLayout>
+</ScrollView>

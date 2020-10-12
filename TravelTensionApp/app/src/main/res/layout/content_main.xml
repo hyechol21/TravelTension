@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/main">
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/aa" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="where we go ?"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/dxbirdbold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/content_button"
+            android:text=" 출발위치 "
+            android:textSize="23sp"
+            android:fontFamily="@font/main_font" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trending_flat_black_24dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/content_button"
+            android:text=" 도착위치 "
+            android:textSize="23sp"
+            android:fontFamily="@font/main_font"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="옮김 날짜"
+            android:textSize="20sp"
+            android:fontFamily="@font/main_font"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/date_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6BA0D7"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text=" 년"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:fontFamily="@font/main_font"/>
+            <TextView
+                android:id="@+id/date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6BA0D7"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text=" 월"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:fontFamily="@font/main_font"/>
+            <TextView
+                android:id="@+id/date_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6BA0D7"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text=" 일"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:fontFamily="@font/main_font"/>
+
+            <ImageButton
+                android:id="@+id/dateBtn"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:onClick="showDatePickerDialog"
+                android:background="#fff"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spinner_bag"
+            style="@style/style_Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textSize="17sp"
+            android:inputType="number"
+            android:background="@drawable/box2"
+            android:fontFamily="@font/main_font"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="개"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:fontFamily="@font/main_font"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="검색 하기"
+        android:textSize="25sp"
+        android:background="@drawable/join_item_button"
+        android:fontFamily="@font/main_font"/>
+
+
+</LinearLayout>
